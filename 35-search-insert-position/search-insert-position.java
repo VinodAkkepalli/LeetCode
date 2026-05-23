@@ -3,10 +3,9 @@ class Solution {
 
         int lIndex = 0;
         int rIndex = nums.length - 1;
-        int mid;
 
         while(lIndex <= rIndex) {
-            mid = lIndex + (rIndex - lIndex) / 2;
+            int mid = lIndex + (rIndex - lIndex) / 2;
             
             if(nums[mid] == target) {
                 return mid;
